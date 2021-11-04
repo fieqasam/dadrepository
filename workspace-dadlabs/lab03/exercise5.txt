@@ -1,0 +1,30 @@
+2321006	Ladang Lendu	Alor Gajah	115.0	1.0	2.0	1.0	1.0	0.0
+Total daily of rainfall for 6 days  of the selected station is 120.0
+The average rainfall of the selected station is 20.0
+------------------------------------------------------------------------------------------------
+
+2222002	Durian Tunggal	Alor Gajah	94.0	1.0	3.0	0.0	0.0	0.0
+Total daily of rainfall for 6 days  of the selected station is 98.0
+The average rainfall of the selected station is 16.3
+------------------------------------------------------------------------------------------------
+
+2324033	Hospital Jasin	Jasin	48.0	0.0	0.0	0.0	7.0	8.0
+Total daily of rainfall for 6 days  of the selected station is 63.0
+The average rainfall of the selected station is 10.5
+------------------------------------------------------------------------------------------------
+
+2225044	Sg.Chohong	Jasin	43.0	0.0	0.0	1.0	0.0	5.0
+Total daily of rainfall for 6 days  of the selected station is 49.0
+The average rainfall of the selected station is 8.2
+------------------------------------------------------------------------------------------------
+
+2222007	Cheng D/S	Melaka Tengah	145.0	0.0	0.0	0.0	0.0	0.0
+Total daily of rainfall for 6 days  of the selected station is 145.0
+The average rainfall of the selected station is 24.2
+------------------------------------------------------------------------------------------------
+
+2221008	Pusat Pertanian Sg Udang	Melaka Tengah	94.0	0.0	1.0	0.0	1.0	0.0
+Total daily of rainfall for 6 days  of the selected station is 96.0
+The average rainfall of the selected station is 16.0
+------------------------------------------------------------------------------------------------
+
