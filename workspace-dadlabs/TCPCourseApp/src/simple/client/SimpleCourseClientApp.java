@@ -41,9 +41,9 @@ public class SimpleCourseClientApp {
 		
 		// Create new object
 		Course course = new Course();
-		course.setCode("BITP3123");
-		course.setEnName("Distributed Application Development");
-		course.setMsName("Pembangunan Aplikasi Teragih");
+		course.setCode("BITP3113");
+		course.setEnName("Object Oriented Programming");
+		course.setMsName("Pengaturcaraan Berorentasikan Object");
 		
 		try {
 			

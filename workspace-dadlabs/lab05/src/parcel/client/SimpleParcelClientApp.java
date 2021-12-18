@@ -50,10 +50,10 @@ public class SimpleParcelClientApp {
 			Parcel processedParcel = (Parcel) ois.readObject();
 			
 			//Manipulate processed object
-			System.out.println("Weight of the parcel(in kg): "+ parcel.getWeight());
+			System.out.println("Weight of the parcel(in kg): "+ processedParcel.getWeight());
 			System.out.print("The courier charge: RM  ");
 			//
-			System.out.printf("%.2f", processedParcel.getWeight());
+			System.out.printf("%.2f", processedParcel.getPrice());
 			
 			//close all streams
 			ois.close();

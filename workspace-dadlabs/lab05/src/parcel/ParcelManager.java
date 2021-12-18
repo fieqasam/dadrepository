@@ -4,9 +4,12 @@ public class ParcelManager {
 	
 	public Parcel createParcel(Parcel parcel) {
 		
-		//Get weight of the parcel 
-		Double weight = this.courierCharge(parcel.getWeight());
+		Double weight = parcel.getWeight();
 		parcel.setWeight(weight);
+		
+		//Get weight of the parcel 
+		Double price = this.courierCharge(parcel.getWeight());
+		parcel.setPrice(price);
 		
 		return parcel;
 		
@@ -24,7 +27,7 @@ public class ParcelManager {
 		
 		if(weight <= 0.00) {
 			
-			price = 0.00;
+			System.out.println("Please enter the valid amount of weight in kg.");
 		}
 		else if(weight >= 0.00 && weight<=0.50) {
 			
@@ -45,7 +48,7 @@ public class ParcelManager {
 	
 		}
 		else {
-			price = 10.70;
+			System.out.println("The weight you've insert exceed the limit.");
 		}
 		return price;
 	}

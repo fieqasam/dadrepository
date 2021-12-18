@@ -63,6 +63,7 @@ public class CourseManager {
 	 */
 	private int getCreditHour (String code) {
 		
+		//extract creditHour from course code start from index 4
 		int creditHour = Integer.parseInt(code.substring(4,5));
 		
 		return creditHour;
