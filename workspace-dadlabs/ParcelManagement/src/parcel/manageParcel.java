@@ -99,6 +99,7 @@ public class manageParcel extends JFrame {
 		panel.add(lblWeightkg);
 		
 		txtWeight = new JTextField();
+		txtWeight.setForeground(Color.BLUE);
 		txtWeight.setBounds(91, 117, 184, 28);
 		txtWeight.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		txtWeight.setColumns(10);

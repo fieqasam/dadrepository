@@ -1,4 +1,4 @@
-                                                     package demo.sleep;
+ package demo.sleep;
 
 /**
  * This class represent a Printer to print numbers
