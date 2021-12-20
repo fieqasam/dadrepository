@@ -6,3 +6,6 @@ This directory contains source codes for lab multithreading part 1.
 
 ## Output from Exercise 2
 ![image](https://github.com/fieqasam/dadrepository/blob/main/workspace-dadlabs/multithreadingLab/Images/multithreading1_execise2_2.PNG)
+
+## Output from Exercise 3
+![image](https://github.com/fieqasam/dadrepository/blob/main/workspace-dadlabs/multithreadingLab/Images/exercise3_1.PNG)
