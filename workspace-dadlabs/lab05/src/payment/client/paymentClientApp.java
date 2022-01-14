@@ -31,14 +31,13 @@ public class paymentClientApp {
 		
 		// Create new object
 		Parcel parcel = new Parcel();
-		parcel.setWeight(4.50);
+		parcel.setWeight(0.05);
 		
 		Payment payment = new Payment();
-		payment.setPaymentId(1377305051);
+		payment.setPaymentId(1002);
 		
 		Date date = new Date();
-		Timestamp trans = new Timestamp(date.getTime());
-		payment.setTransactionDate(trans);
+		payment.setTransactionDate(date);
 		
 		String name ="Nurul Afiqah";
 		payment.setRecordedBy(name);
@@ -50,15 +49,15 @@ public class paymentClientApp {
 			 
 			 //Send object to be processed by the server-side application
 			 ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-			 oos.writeObject(payment);
 			 oos.writeObject(parcel);
+			 oos.writeObject(payment);
 			 
 			 System.out.println("Sending "+payment.getPaymentId() + " to server-side application");
 			 
 			 //Receive processed object
 			 ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-			 Payment processedPayment = (Payment) ois.readObject();
 			 Parcel processedParcel = (Parcel) ois.readObject();
+			 Payment processedPayment = (Payment) ois.readObject();
 			 
 			 //Manipulate processed object
 			 System.out.println("Payment Id: "+ processedPayment.getPaymentId());
@@ -75,7 +74,7 @@ public class paymentClientApp {
 			 
 		 }
 		 catch(Exception ex) {
-			 
+			 ex.printStackTrace();
 		 }
 		
 

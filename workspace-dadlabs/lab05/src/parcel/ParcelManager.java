@@ -4,11 +4,11 @@ public class ParcelManager {
 	
 	public Parcel createParcel(Parcel parcel) {
 		
-		Double weight = parcel.getWeight();
+		double weight = parcel.getWeight();
 		parcel.setWeight(weight);
 		
 		//Get weight of the parcel 
-		Double price = this.courierCharge(parcel.getWeight());
+		double price = this.courierCharge(parcel.getWeight());
 		parcel.setPrice(price);
 		
 		return parcel;

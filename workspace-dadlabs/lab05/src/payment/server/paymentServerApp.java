@@ -5,6 +5,8 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import parcel.Parcel;
+import parcel.ParcelManager;
 import payment.Payment;
 import payment.paymentManager;
 
@@ -29,6 +31,7 @@ public class paymentServerApp {
 
 	public static void main(String[] args) {
 		
+		ParcelManager  parcelManager = new ParcelManager();
 		paymentManager managePayment = new paymentManager();
 		
 		System.out.println("Starting Payment Server side..");
@@ -47,15 +50,18 @@ public class paymentServerApp {
 				//Read object from client, cast into payment
 				
 				ObjectInputStream ois = new ObjectInputStream(clientSocket.getInputStream());
+				Parcel parcel = (Parcel) ois.readObject();
 				Payment payment = (Payment) ois.readObject();
-				System.out.println("Processing object from client: "+payment.getPaymentId());
+				//System.out.println("Processing object from client: "+payment.getPaymentId());
 				
 				//Process object
+				parcel =  parcelManager.createParcel(parcel);
 				payment = managePayment.managePayment(payment);
 				
 				//Return object to client using input stream
 				ObjectOutputStream oos = new ObjectOutputStream(clientSocket.getOutputStream());
 				oos.writeObject(payment);
+				oos.writeObject(parcel);
 				
 				//close all stream
 				ois.close();

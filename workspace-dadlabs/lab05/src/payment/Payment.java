@@ -13,7 +13,7 @@ public class Payment extends Staff implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private int paymentId;
-	private Timestamp transactionDate;
+	private Date transactionDate;
 	private Staff recordedBy;
 	
 	public Payment() {
@@ -28,14 +28,16 @@ public class Payment extends Staff implements Serializable{
 		this.paymentId = paymentId;
 		
 	}
+	public void setTransactionDate (Date date)
+	{
+		this.transactionDate = date;
+	}
 	
-	public Timestamp getTransactionDate() {
+	public Date getTransactionDate()
+	{
 		return transactionDate;
 	}
 	
-	public void setTransactionDate(Timestamp trans) {
-		this.transactionDate = trans;
-	}
 	
 	public String getRecordedBy() {
 		return super.name;
